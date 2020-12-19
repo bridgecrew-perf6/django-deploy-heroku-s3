@@ -14,8 +14,6 @@ from pathlib import Path
 
 # Parse database configuration from $DATABASE_URL
 import dj_database_url
-import storages
-import boto
 import os
 
 DATABASES = { 'default' : dj_database_url.config()}
@@ -57,7 +55,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'myapi.apps.MyapiConfig'
+    'myapi.apps.MyapiConfig',
+    'storages',
+    'boto'
 ]
 
 MIDDLEWARE = [
