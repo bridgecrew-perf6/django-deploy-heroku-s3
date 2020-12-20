@@ -16,6 +16,15 @@ from pathlib import Path
 import dj_database_url
 import os
 
+from botocore.client import Config
+
+
+s3 = boto3.resource(
+    's3',
+    aws_access_key_id='AKIAWXV7C3GNNUPR6PXT',
+    aws_secret_access_key='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',
+    config=Config(signature_version='s3v4')
+)
 DATABASES = { 'default' : dj_database_url.config()}
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
