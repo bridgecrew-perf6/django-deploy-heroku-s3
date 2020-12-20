@@ -102,8 +102,8 @@ DATABASES = {
         'NAME': 'fylerest',
         'USER': 'postgres',
         'PASSWORD' : 'devansh',
-        'HOST' : 'localhost',
-        'POST' : '5432'
+        # 'HOST' : 'localhost',
+        # 'POST' : '5432'
     }
 }
 
