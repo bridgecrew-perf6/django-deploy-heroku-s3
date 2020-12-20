@@ -96,15 +96,21 @@ WSGI_APPLICATION = 'fyleRest.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'fylerest',
+#         'USER': 'postgres',
+#         'PASSWORD' : 'devansh',
+#         # 'HOST' : 'localhost',
+#         # 'POST' : '5432'
+#     }
+# }
+from decouple import config
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'fylerest',
-        'USER': 'postgres',
-        'PASSWORD' : 'devansh',
-        # 'HOST' : 'localhost',
-        # 'POST' : '5432'
-    }
+    'default': dj_database_url.config(
+        default=config('DATABASE_URL')
+    )
 }
 
 
