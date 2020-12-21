@@ -160,7 +160,7 @@ STATIC_URL = '/static/'
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:8081',
-    'https://arcane-sierra-90661.herokuapp.com/'
+    'https://arcane-sierra-90661.herokuapp.com'
 )
 
 # # Allow all host hosts/domain names for this site
