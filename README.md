@@ -1,6 +1,6 @@
 # django-deploy-heroku-s3
 
-- This is an REST api created using Django Rest framework and hosted on Heroku. S3 buckets on AWS are also used for database transfer.
+- This is an REST api created using Django Rest framework, PostgreSQL and hosted on Heroku. S3 buckets on AWS are also used for database transfer.
 - Hosted on: https://fyle-test-dev.herokuapp.com/
 - Use the following type of commands to retrieve data:
 
